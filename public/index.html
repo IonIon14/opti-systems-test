@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>A Basic HTML5 Template</title>
+    <meta
+      name="description"
+      content="A simple HTML5 Template for new projects."
+    />
+    <meta name="author" content="SitePoint" />
+
+    <meta property="og:title" content="A Basic HTML5 Template" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.sitepoint.com/a-basic-html5-template/"
+    />
+    <meta
+      property="og:description"
+      content="A simple HTML5 Template for new projects."
+    />
+    <meta property="og:image" content="image.png" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="http://fonts.cdnfonts.com/css/jenna-sue" rel="stylesheet" />
+
+    <!-- or the one installed in node_modules directory, -->
+
+    <!-- or the reference on CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="rounded-b-xl border-2 shadow-lg mx-auto lg:mx-40 max-w-full">
+      <img src="assets/logo.PNG" alt="logo" class="self-start object-cover" />
+      <nav
+        class="
+          flex
+          items-center
+          justify-center
+          flex-wrap
+          bg-gradient-to-r
+          from-gray-100
+          via-indigo-900
+          to-gray-100
+          p-2
+          px-0
+        "
+      >
+        <div
+          class="
+            w-full
+            block
+            flex-grow
+            lg:flex lg:items-center lg:w-auto
+            items-center
+            space-x-1
+          "
+        >
+          <ul
+            class="
+              lg:flex-grow
+              flex flex-row
+              justify-around
+              font-arial
+              h-full
+              w-full
+              lg:ml-20
+              mx-auto
+              gap-2
+              text-md
+            "
+          >
+            <li class="">
+              <button id="hamburger-button">
+                <img
+                  src="assets/bars-solid.svg"
+                  alt="hamburger-icon"
+                  class="
+                    cursor-pointer
+                    outline-none
+                    lg:hidden
+                    inline-block
+                    w-5
+                    h-5
+                    ml-2
+                  "
+                />
+              </button>
+            </li>
+            <li>
+              <a
+                href="#responsive-header"
+                class="
+                  text-md
+                  hidden
+                  lg:inline-block lg:mt-0
+                  hover:bg-gray-light
+                  h-auto
+                  text-white
+                  font-semibold
+                  tracking-wider
+                  hover:text-gray-light
+                "
+              >
+                Acasa
+              </a>
+            </li>
+            <li>
+              <a
+                href="#responsive-header"
+                class="
+                  text-md
+                  hidden
+                  lg:inline-block lg:mt-0
+                  text-white
+                  font-semibold
+                  h-auto
+                  tracking-wider
+                "
+              >
+                Despre noi
+              </a>
+            </li>
+            <li>
+              <a
+                href="#responsive-header"
+                class="
+                  hidden
+                  lg:inline-block lg:mt-0
+                  text-white
+                  font-semibold
+                  text-md
+                  h-auto
+                  tracking-wider
+                "
+              >
+                Daily
+              </a>
+            </li>
+            <li>
+              <a
+                href="#responsive-header"
+                class="
+                  hidden
+                  lg:inline-block lg:mt-0
+                  text-white
+                  font-semibold
+                  text-md
+                  h-auto
+                  tracking-wider
+                "
+              >
+                Colin
+              </a>
+            </li>
+            <li>
+              <a
+                href="#responsive-header"
+                class="
+                  hidden
+                  lg:inline-block lg:mt-0
+                  text-white
+                  font-semibold
+                  text-md
+                  h-auto
+                  tracking-wider
+                "
+              >
+                Unde ne gasiti?
+              </a>
+            </li>
+            <li>
+              <a
+                href="#responsive-header"
+                class="
+                  hidden
+                  lg:inline-block lg:mt-0
+                  text-white
+                  font-semibold
+                  h-auto
+                  text-md
+                  tracking-wider
+                "
+              >
+                Contact
+              </a>
+            </li>
+            <li>
+              <div class="shadow flex">
+                <input
+                  class="w-full rounded placeholder-black p-1 text-black"
+                  type="text"
+                  placeholder="cauta..."
+                />
+                <img
+                  src="assets/search-solid.svg"
+                  alt="search"
+                  class="
+                    w-5
+                    h-5
+                    object-fill
+                    cursor-pointer
+                    absolute
+                    md:right-12
+                    lg:right-48
+                    mt-1
+                    right-8
+                  "
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <ul
+        id="menu-responsive"
+        class="
+          hidden
+          lg:hidden
+          w-full
+          text-center
+          bg-gradient-to-b
+          from-indigo-700
+          to-indigo-900
+          text-white
+          font-arial
+          text-lg
+        "
+      >
+        <li class="w-full p-4 border-b-2 hover:bg-gray-400">
+          <a href="#">Acasa</a>
+        </li>
+        <li class="w-full p-4 border-b-2 hover:bg-gray-400">
+          <a href="#">Despre noi</a>
+        </li>
+        <li class="w-full p-4 border-b-2 hover:bg-gray-400">
+          <a href="#">Daily</a>
+        </li>
+        <li class="w-full p-4 border-b-2 hover:bg-gray-400">
+          <a href="#">Colin</a>
+        </li>
+        <li class="w-full p-4 border-b-2 hover:bg-gray-400">
+          <a href="#">Unde ne gasiti?</a>
+        </li>
+        <li class="w-full p-4"><a href="#">Contact</a></li>
+      </ul>
+      <section
+        class="flex justify-center flex-col align-center mx-10 md:mx-auto"
+      >
+        <img
+          src="http://www.grebakery.ro/wp-content/uploads/2020/03/087d17eb-500e-4b26-abd1-4f9ffa96a2c6.jpg"
+          alt=""
+          class="
+            w-3/4
+            h-full
+            lg:h-normal
+            object-cover
+            mt-10
+            rounded-xl
+            self-center
+          "
+        />
+
+        <h2 class="text-center my-4 text-xl font-georgia italic font-medium">
+          There are many variations of passages of Lorem Ipsum
+        </h2>
+      </section>
+    </div>
+    <section
+      class="
+        flex
+        justify-center
+        flex-col
+        align-center
+        lg:mx-40
+        mx-auto
+        mt-8
+        rounded-t-xl
+        border-2
+        shadow-lg
+      "
+    >
+      <div class="md:grid md:grid-cols-3 flex flex-col">
+        <div class="col-start-1 col-span-2 border-r-2 border-gray">
+          <div class="flex flex-col justify-center text-center md:mx-14 mx-10">
+            <h1
+              class="
+                text-5xl
+                font-jenna-sue
+                my-8
+                font-semibold
+                tracking-wider
+                text-indigo-900
+              "
+            >
+              Despre noi
+            </h1>
+            <div class="w-full text-left font-georgia">
+              <p class="">
+                <span class="font-bold">SCM Colin Daily</span> este o
+                cooperativa mestesugareasca cu scop productiv,infiintata in anul
+                <span class="font-bold">1955</span>.Avand in vedere numarul de
+                personal angajat si cifra de afaceri realizata, societatea
+                noastra poate fi inclusa in categoria firmelor mijlocii.
+              </p>
+              <p class="mt-4">
+                Fiind o societate cooperativa,Colin Daily are capital privat
+                detinut de grup - actiunile sunt detinute de catre angajati.
+              </p>
+              <p class="mt-4">
+                SCM Collin Daily produce sub
+                <span class="font-bold">2 branduri:</span>
+              </p>
+              <ul class="flex flex-col ml-4 my-4">
+                <li class="nowrap flex flex-row">
+                  <span class="font-bold mr-4"
+                    ><img
+                      src="./assets/chevron-right-solid.svg"
+                      class="w-4 h-4"
+                      alt="arrow" /></span
+                  ><span class="font-bold mr-2">Daily </span>
+                  - pentru produsele zaharoase si pentru aditivi;
+                </li>
+                <li class="flex flex-row mt-4">
+                  <span class="font-bold mr-4"
+                    ><img
+                      src="./assets/chevron-right-solid.svg"
+                      class="w-4 h-4"
+                      alt="arrow" /></span
+                  ><span class="font-bold mr-2">Colin </span> - pentru produsele
+                  vegetale.
+                </li>
+              </ul>
+              <p class="mt-4">
+                Compania noastra foloseste retete proprii pentru realizarea
+                produselor sale, firma detinand licente de fabricatie care
+                respecta legislatia si european in...
+              </p>
+            </div>
+            <button
+              class="
+                bg-indigo-900
+                hover:bg-blue-700
+                text-white
+                self-center
+                font-georgia
+                italic
+                py-1
+                px-2
+                my-10
+                text-sm
+                rounded-full
+              "
+            >
+              mai multe
+            </button>
+          </div>
+        </div>
+        <div class="col-start-3 col-span-1">
+          <div class="flex flex-col justify-center text-center mx-10">
+            <h1
+              class="
+                text-5xl
+                font-jenna-sue
+                my-8
+                font-semibold
+                tracking-wider
+                text-indigo-900
+              "
+            >
+              Produsele noastre
+            </h1>
+            <div class="splide">
+              <div class="splide__track">
+                <ul class="splide__list flex">
+                  <li class="splide__slide">
+                    <div class="splide__slide__container">
+                      <img
+                        src="./assets/second.PNG"
+                        alt="second-picture"
+                        class="object-fill w-40 h-full self-center mx-auto"
+                      />
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="splide__slide__container">
+                      <img
+                        src="./assets/second.PNG"
+                        alt="second-picture"
+                        class="object-fill w-40 h-full self-center mx-auto"
+                      />
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="splide__slide__container">
+                      <img
+                        src="./assets/second.PNG"
+                        alt="second-picture"
+                        class="object-fill w-40 h-full self-center mx-auto"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button
+              class="
+                bg-indigo-900
+                hover:bg-blue-700
+                text-white
+                self-center
+                font-georgia
+                italic
+                py-1
+                px-2
+                my-10
+                text-sm
+                bottom-0
+                rounded-full
+              "
+            >
+              mai multe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-gradient-to-b from-indigo-900 to-black">
+      <div class="">
+        <div
+          class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-center"
+        >
+          <div class="p-8 tracking-wide w-40">
+            <div class="text-xs text-white font-normal cursor-pointer">
+              Acasa
+            </div>
+          </div>
+          <div class="p-8 tracking-wide w-40">
+            <div class="text-xs text-white font-normal cursor-pointer">
+              Despre noi
+            </div>
+          </div>
+          <div class="p-8 tracking-wide w-40">
+            <div class="text-xs text-white font-normal cursor-pointer">
+              Daily
+            </div>
+          </div>
+          <div class="p-8 tracking-wide w-40">
+            <div class="text-xs text-white font-normal cursor-pointer">
+              Colin
+            </div>
+          </div>
+          <div class="p-8 tracking-wide w-40">
+            <div class="text-xs text-white font-normal cursor-pointer">
+              Unde ne gasiti?
+            </div>
+          </div>
+          <div class="p-8 tracking-wide w-40">
+            <div class="text-xs text-white font-normal cursor-pointer">
+              Contact
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-2">
+        <div
+          class="flex pb-5 m-auto pt-10 justify-center text-gray-800 text-sm"
+        >
+          <div class="mt-2 self-center flex text-center text-white">
+            <p class="text-center text-xs font-georgia text-gray-400 lg:mr-40">
+              ©2012.Toate drepturile rezervate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide(".splide").mount();
+      });
+    </script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  </body>
+</html>

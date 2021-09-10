@@ -1,0 +1,15 @@
+{
+  "name": "opti-systems",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "author": "Ionut Baciu",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@splidejs/splide": "^2.4.21",
+    "tailwindcss": "^2.2.14"
+  }
+}

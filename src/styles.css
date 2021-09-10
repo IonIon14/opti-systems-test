@@ -1,0 +1,20 @@
+    
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base{
+@font-face {
+    font-family: 'Jenna Sue',sans-serif;
+    src: url('http://www.fontsaddict.com/fontface/jenna-sue.ttf');
+  }
+}
+.splide__pagination{
+  display:none;
+}
+
+.header-nav{
+  background-image: linear-gradient(to right, #ffffff, #d7d1e9, #b2a4d1, #9177b7, #724b9c, #6150a2, #4b54a7, #2d58ab, #3784c1, #6bacce, #abd2dc, #f0f5f5);
+}
