@@ -17,15 +17,19 @@ window.addEventListener("resize", () => {
 
 const dropdown = document.querySelector(".dropdownButton");
 const dropdownList = document.querySelector("#menu-dropdown");
+const dropdownListElement = document.querySelector(".dropdown-list-element");
+console.log(dropdownListElement);
 
-dropdown.addEventListener("mouseover", () => {
+dropdown.addEventListener("mouseenter", () => {
   const dropdownList = document.querySelector("#menu-dropdown");
   dropdownList.classList.toggle("hidden");
+
+  dropdownListElement.classList.add("bg-green-light");
 });
 
 dropdownList.addEventListener("mouseleave", () => {
-  
   dropdownList.classList.toggle("hidden");
+  dropdownListElement.classList.remove("bg-green-light");
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -35,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const slider_one = () => {
   const one = new Splide("#one", {
     autoplay: false,
-    pagination:false,
+    pagination: false,
     keyboard: "focused", //enabling keyboard for focused element
   }).mount();
 };
@@ -43,7 +47,7 @@ const slider_one = () => {
 const slider_two = () => {
   const two = new Splide("#two", {
     autoplay: false,
-    pagination:false,
+    pagination: false,
     keyboard: "focused", //enabling keyboard for focused element
   }).mount();
 };
