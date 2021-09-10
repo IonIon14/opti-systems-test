@@ -54,12 +54,11 @@
           items-center
           justify-center
           flex-wrap
-          bg-gradient-to-r
-          from-gray-100
-          via-indigo-900
-          to-gray-100
-          p-2
           px-0
+          bg-gradient-to-r
+          from-white
+          via-indigo-900
+          to-white
         "
       >
         <div
@@ -69,48 +68,38 @@
             flex-grow
             lg:flex lg:items-center lg:w-auto
             items-center
-            space-x-1
           "
         >
           <ul
             class="
               lg:flex-grow
               flex flex-row
+              items-center
+              lg:justify-center
               justify-around
               font-arial
               h-full
               w-full
-              lg:ml-20
               mx-auto
-              gap-2
               text-md
             "
           >
-            <li class="">
+            <li class="py-3 px-3 lg:hidden inline-block">
               <button id="hamburger-button">
                 <img
                   src="assets/bars-solid.svg"
                   alt="hamburger-icon"
-                  class="
-                    cursor-pointer
-                    outline-none
-                    lg:hidden
-                    inline-block
-                    w-5
-                    h-5
-                    ml-2
-                  "
+                  class="cursor-pointer outline-none w-5 h-5 ml-2"
                 />
               </button>
             </li>
-            <li>
+            <li class="py-3 px-4 bg-red focus:bg-green-light">
               <a
                 href="#responsive-header"
                 class="
                   text-md
                   hidden
                   lg:inline-block lg:mt-0
-                  hover:bg-gray-light
                   h-auto
                   text-white
                   font-semibold
@@ -121,7 +110,7 @@
                 Acasa
               </a>
             </li>
-            <li>
+            <li class="py-3 px-4 hover:bg-green-light">
               <a
                 href="#responsive-header"
                 class="
@@ -137,7 +126,7 @@
                 Despre noi
               </a>
             </li>
-            <li>
+            <li class="py-3 px-4 hover:bg-green-light">
               <a
                 href="#responsive-header"
                 class="
@@ -153,7 +142,7 @@
                 Daily
               </a>
             </li>
-            <li>
+            <li class="py-3 px-4 hover:bg-green-light">
               <a
                 href="#responsive-header"
                 class="
@@ -169,7 +158,7 @@
                 Colin
               </a>
             </li>
-            <li>
+            <li class="py-3 px-4 hover:bg-green-light">
               <a
                 href="#responsive-header"
                 class="
@@ -185,7 +174,7 @@
                 Unde ne gasiti?
               </a>
             </li>
-            <li>
+            <li class="py-3 px-4 hover:bg-green-light">
               <a
                 href="#responsive-header"
                 class="
@@ -201,8 +190,8 @@
                 Contact
               </a>
             </li>
-            <li>
-              <div class="shadow flex">
+            <li class="py-2 px-2">
+              <div class="shadow flex relative">
                 <input
                   class="w-full rounded placeholder-black p-1 text-black"
                   type="text"
@@ -217,10 +206,9 @@
                     object-fill
                     cursor-pointer
                     absolute
-                    md:right-12
-                    lg:right-48
+                    right-0
                     mt-1
-                    right-8
+                    mr-1
                   "
                 />
               </div>
