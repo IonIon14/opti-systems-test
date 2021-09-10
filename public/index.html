@@ -46,7 +46,18 @@
   </head>
 
   <body>
-    <div class="rounded-b-xl border-2 shadow-lg mx-auto lg:mx-40 max-w-full">
+    <div
+      class="
+        rounded-b-xl
+        border-2
+        shadow-lg
+        mx-auto
+        lg:mx-40
+        max-w-full
+        relative
+        pb-8
+      "
+    >
       <img src="assets/logo.PNG" alt="logo" class="self-start object-cover" />
       <nav
         class="
@@ -85,11 +96,11 @@
             "
           >
             <li class="py-3 px-3 lg:hidden inline-block">
-              <button id="hamburger-button">
+              <button id="hamburger-button" class="cursor-pointer focus:outline-none">
                 <img
                   src="assets/bars-solid.svg"
                   alt="hamburger-icon"
-                  class="cursor-pointer outline-none w-5 h-5 ml-2"
+                  class=" w-5 h-5 ml-2"
                 />
               </button>
             </li>
@@ -130,6 +141,7 @@
               <a
                 href="#responsive-header"
                 class="
+                  dropdownButton
                   hidden
                   lg:inline-block lg:mt-0
                   text-white
@@ -142,6 +154,7 @@
                 Daily
               </a>
             </li>
+
             <li class="py-3 px-4 hover:bg-green-light">
               <a
                 href="#responsive-header"
@@ -228,6 +241,7 @@
           to-indigo-900
           text-white
           font-arial
+          
           text-lg
         "
       >
@@ -248,26 +262,130 @@
         </li>
         <li class="w-full p-4"><a href="#">Contact</a></li>
       </ul>
+
+      <ul
+        id="menu-dropdown"
+        class="
+          w-42
+          hidden
+          absolute
+          left-96
+          z-10
+          text-left text-white
+          bg-green-light
+          text-lg
+        "
+      >
+        <li class="w-full p-4 hover:bg-gray-400 text-bold font-georgia">
+          <a href="#">Tablete mentosan</a>
+        </li>
+        <li class="w-full p-4 hover:bg-gray-400 text-bold font-georgia">
+          <a href="#">Dropsuri</a>
+        </li>
+        <li class="w-full p-4 hover:bg-gray-400 text-bold font-georgia">
+          <a href="#">Caramele</a>
+        </li>
+        <li class="w-full p-4 hover:bg-gray-400 text-bold font-georgia">
+          <a href="#">Serbet</a>
+        </li>
+      </ul>
+
       <section
         class="flex justify-center flex-col align-center mx-10 md:mx-auto"
       >
-        <img
-          src="http://www.grebakery.ro/wp-content/uploads/2020/03/087d17eb-500e-4b26-abd1-4f9ffa96a2c6.jpg"
-          alt=""
-          class="
-            w-3/4
-            h-full
-            lg:h-normal
-            object-cover
-            mt-10
-            rounded-xl
-            self-center
-          "
-        />
+        <div class="splide" id="one">
+          <div class="splide__track">
+            <div class="splide__list">
+              <li class="splide__slide h-full p-8 md:p-0 ">
+                <img
+                  src="http://www.grebakery.ro/wp-content/uploads/2020/03/087d17eb-500e-4b26-abd1-4f9ffa96a2c6.jpg"
+                  alt=""
+                  class="
+                    w-3/4
+                    h-full
+                    lg:h-normal
+                    object-cover
+                    mt-10
+                    rounded-xl
+                    self-center
+                    mx-auto
+                  "
+                />
 
-        <h2 class="text-center my-4 text-xl font-georgia italic font-medium">
-          There are many variations of passages of Lorem Ipsum
-        </h2>
+                <h2
+                  class="
+                    text-center
+                    my-4
+                    text-xl
+                    font-georgia
+                    italic
+                    font-medium
+                  "
+                >
+                  There are many variations of passages of Lorem Ipsum
+                </h2>
+              </li>
+              <li class="splide__slide h-full p-8 md:p-0">
+                <img
+                  src="http://www.grebakery.ro/wp-content/uploads/2020/03/087d17eb-500e-4b26-abd1-4f9ffa96a2c6.jpg"
+                  alt=""
+                  class="
+                    w-3/4
+                    h-full
+                    lg:h-normal
+                    object-cover
+                    mt-10
+                    rounded-xl
+                    self-center
+                    mx-auto
+                  "
+                />
+
+                <h2
+                  class="
+                    text-center
+                    my-4
+                    text-xl
+                    font-georgia
+                    italic
+                    font-medium
+                  "
+                >
+                  There are many variations of passages of Lorem Ipsum
+                </h2>
+              </li>
+              <li class="splide__slide h-full p-8 md:p-0">
+                <img
+                  src="http://www.grebakery.ro/wp-content/uploads/2020/03/087d17eb-500e-4b26-abd1-4f9ffa96a2c6.jpg"
+                  alt=""
+                  class="
+                    w-3/4
+                    h-full
+                    lg:h-normal
+                    object-cover
+                    mt-10
+                    rounded-xl
+                    self-center
+                    mx-auto
+                  "
+                />
+
+                <h2
+                  class="
+                    text-center
+                    my-4
+                    text-xl
+                    font-georgia
+                    italic
+                    font-medium
+                  "
+                >
+                  There are many variations of passages of Lorem Ipsum
+                </h2>
+              </li>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <section
@@ -374,7 +492,7 @@
             >
               Produsele noastre
             </h1>
-            <div class="splide">
+            <div class="splide" id="two">
               <div class="splide__track">
                 <ul class="splide__list flex">
                   <li class="splide__slide">

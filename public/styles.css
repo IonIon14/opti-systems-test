@@ -594,10 +594,19 @@ video {
 [hidden] {
   display: none;
 }
+.splide{
+  position:relative;
+}
 .splide__pagination{
-  display:none;
+  position:absolute;
+  top:100%;
+
 }
 
+.splide__pagination__page.is-active{
+  background:
+  #312E81
+}
 
 *, ::before, ::after {
   --tw-border-opacity: 1;
