@@ -108,7 +108,14 @@
               </button>
             </li>
             <li
-              class="py-3 px-4 bg-red focus:bg-green-light hover:bg-green-light"
+              class="
+                py-3
+                px-4
+                bg-red bg-green-light
+                hidden
+                lg:inline-block
+                hover:bg-green-light
+              "
             >
               <a
                 href="#responsive-header"
@@ -150,6 +157,7 @@
                 px-4
                 dropdown-list-element
                 dropdownButton
+                relative
                 hover:bg-green-light
               "
             >
@@ -168,6 +176,70 @@
               >
                 Daily
               </a>
+              <ul
+                id="menu-dropdown"
+                class="
+                  w-44
+                  hidden
+                  absolute
+                  left-0
+                  top-12
+                  z-10
+                  text-left text-white
+                  bg-green-light
+                  text-lg
+                "
+                style="margin-right: 78px"
+              >
+                <li class="w-full p-2">
+                  <a
+                    href="#"
+                    class="
+                      text-md
+                      font-semibold font-arial
+                      shadow-2xl
+                      hover:text-indigo-900
+                    "
+                    >Tablete mentosan</a
+                  >
+                </li>
+                <li class="w-full p-2">
+                  <a
+                    href="#"
+                    class="
+                      text-md
+                      font-semibold font-arial
+                      shadow-2xl
+                      hover:text-indigo-900
+                    "
+                    >Dropsuri</a
+                  >
+                </li>
+                <li class="w-full p-2">
+                  <a
+                    href="#"
+                    class="
+                      text-md
+                      font-semibold font-arial
+                      shadow-2xl
+                      hover:text-indigo-900
+                    "
+                    >Caramele</a
+                  >
+                </li>
+                <li class="w-full p-2">
+                  <a
+                    href="#"
+                    class="
+                      text-md
+                      font-semibold font-arial
+                      shadow-2xl
+                      hover:text-indigo-900
+                    "
+                    >Serbet</a
+                  >
+                </li>
+              </ul>
             </li>
 
             <li class="py-3 px-4 hover:bg-green-light">
@@ -280,70 +352,6 @@
         <li class="w-full p-4"><a href="#">Contact</a></li>
       </ul>
 
-      <ul
-        id="menu-dropdown"
-        class="
-          w-42
-          hidden
-          absolute
-          right-1/2
-          z-10
-          text-left text-white
-          bg-green-light
-          text-lg
-        "
-        style="margin-right: 78px"
-      >
-        <li class="w-full p-2">
-          <a
-            href="#"
-            class="
-              text-medium
-              font-semibold font-arial
-              shadow-2xl
-              hover:text-indigo-900
-            "
-            >Tablete mentosan</a
-          >
-        </li>
-        <li class="w-full p-2">
-          <a
-            href="#"
-            class="
-              text-medium
-              font-semibold font-arial
-              shadow-2xl
-              hover:text-indigo-900
-            "
-            >Dropsuri</a
-          >
-        </li>
-        <li class="w-full p-2">
-          <a
-            href="#"
-            class="
-              text-medium
-              font-semibold font-arial
-              shadow-2xl
-              hover:text-indigo-900
-            "
-            >Caramele</a
-          >
-        </li>
-        <li class="w-full p-2">
-          <a
-            href="#"
-            class="
-              text-medium
-              font-semibold font-arial
-              shadow-2xl
-              hover:text-indigo-900
-            "
-            >Serbet</a
-          >
-        </li>
-      </ul>
-
       <section
         class="flex justify-center flex-col align-center mx-10 md:mx-auto"
       >
@@ -370,7 +378,8 @@
                   class="
                     text-center
                     my-4
-                    text-2xl
+                    text-xl
+                    lg:text-2xl
                     font-georgia
                     italic
                     font-medium
@@ -400,6 +409,7 @@
                     text-center
                     my-4
                     text-xl
+                    lg:text-2xl
                     font-georgia
                     italic
                     font-medium
@@ -429,6 +439,7 @@
                     text-center
                     my-4
                     text-xl
+                    lg:text-2xl
                     font-georgia
                     italic
                     font-medium
@@ -452,7 +463,7 @@
         mx-auto
         mt-8
         rounded-t-xl
-        border-2
+        border-2 border-white
         shadow-lg
       "
     >
@@ -467,6 +478,7 @@
                 font-semibold
                 tracking-wider
                 text-indigo-900
+                drop-shadow-md
               "
             >
               Despre noi
@@ -479,11 +491,11 @@
                 personal angajat si cifra de afaceri realizata, societatea
                 noastra poate fi inclusa in categoria firmelor mijlocii.
               </p>
-              <p class="mt-4">
+              <p class="mt-6">
                 Fiind o societate cooperativa, Colin Daily are capital privat
                 detinut de grup - actiunile sunt detinute de catre angajati.
               </p>
-              <p class="mt-4">
+              <p class="mt-6">
                 SCM Collin Daily produce sub
                 <span class="font-bold">2 branduri:</span>
               </p>
@@ -542,6 +554,7 @@
                 font-semibold
                 tracking-wider
                 text-indigo-900
+                drop-shadow-md
               "
             >
               Produsele noastre

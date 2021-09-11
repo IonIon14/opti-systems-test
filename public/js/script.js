@@ -33,32 +33,24 @@ dropdownList.addEventListener("mouseleave", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  global_carousel__ctrl();
+  initiateHomeSlider();
+  initiateSecondSlider();
 });
 
-const slider_one = () => {
-  const one = new Splide("#one", {
-    autoplay: false,
-    pagination: false,
+const initiateHomeSlider = () => {
+  new Splide("#one", {
+    autoplay: true,
+    type: "loop",
+    interval: 3000,
     keyboard: "focused", //enabling keyboard for focused element
   }).mount();
 };
 
-const slider_two = () => {
-  const two = new Splide("#two", {
-    autoplay: false,
-    pagination: false,
+const initiateSecondSlider = () => {
+  new Splide("#two", {
+    autoplay: true,
+    type: "loop",
+    interval: 3000,
     keyboard: "focused", //enabling keyboard for focused element
   }).mount();
-};
-
-//alternate way of triggering carousels in muiltiple instances
-const global_carousel__ctrl = () => {
-  const elms = document.getElementsByClassName("splide");
-  for (let i = 0; i < elms.length; i++) {
-    new Splide(elms[i], {
-      autoplay: false,
-      keyboard: "focused", //enabling keyboard for focused element
-    }).mount();
-  }
 };
