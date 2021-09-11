@@ -24,11 +24,11 @@ dropdown.addEventListener("mouseenter", () => {
   const dropdownList = document.querySelector("#menu-dropdown");
   dropdownList.classList.toggle("hidden");
 
-  dropdownListElement.classList.add("bg-green-light");
+  dropdownListElement.classList.toggle("bg-green-light");
 });
 
 dropdownList.addEventListener("mouseleave", () => {
-  dropdownList.classList.toggle("hidden");
+  dropdownList.classList.add("hidden");
   dropdownListElement.classList.remove("bg-green-light");
 });
 
